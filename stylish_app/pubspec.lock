@@ -593,7 +593,7 @@ packages:
     source: hosted
     version: "1.4.0"
   vector_graphics:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: vector_graphics
       sha256: "44cc7104ff32563122a929e4620cf3efd584194eec6d1d913eb5ba593dbcf6de"

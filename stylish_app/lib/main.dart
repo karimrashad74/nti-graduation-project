@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stylish_app/core/constants/assets_app.dart';
+import 'package:stylish_app/core/constants/colors_app.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,6 +11,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Scaffold(body: AssetsApp.icons.logo.svg()));
+    return MaterialApp(
+      theme: ThemeData(
+        scaffoldBackgroundColor: ColorsApp.scaffoldBackgroundColor,
+        primaryColor: ColorsApp.primaryColor,
+      ),
+      home: Scaffold(body: AssetsApp.icons.logo.svg()),
+    );
   }
 }
