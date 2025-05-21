@@ -12,8 +12,8 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
-class $AssetsIconsGen {
-  const $AssetsIconsGen();
+class $AssetsIcons {
+  const $AssetsIcons();
 
   /// File path: assets/icons/Profile.svg
   SvgGenImage get profile => const SvgGenImage('assets/icons/Profile.svg');
@@ -76,8 +76,8 @@ class $AssetsIconsGen {
   ];
 }
 
-class $AssetsImagesGen {
-  const $AssetsImagesGen();
+class $AssetsImages {
+  const $AssetsImages();
 
   /// File path: assets/images/get_start.png
   AssetGenImage get getStart =>
@@ -90,8 +90,8 @@ class $AssetsImagesGen {
 class AssetsApp {
   const AssetsApp._();
 
-  static const $AssetsIconsGen icons = $AssetsIconsGen();
-  static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsIcons icons = $AssetsIcons();
+  static const $AssetsImages images = $AssetsImages();
 }
 
 class AssetGenImage {

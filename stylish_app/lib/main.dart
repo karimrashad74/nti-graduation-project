@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stylish_app/core/constants/assets.gen.dart';
+import 'package:stylish_app/core/constants/assets_app.dart';
 
 void main() {
   runApp(const MainApp());
