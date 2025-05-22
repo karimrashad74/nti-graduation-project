@@ -5,7 +5,7 @@ import 'package:stylish_app/core/constants/assets_app.dart';
 import 'package:stylish_app/core/constants/colors_app.dart';
 
 import 'config/localisation/translations.dart';
-import 'features/language/language_view.dart';
+import 'features/language/presentation/view/language_view.dart';
 
 void main() {
   runApp(const MainApp());
