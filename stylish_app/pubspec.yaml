@@ -13,6 +13,7 @@ dependencies:
   flutter_gen_runner: ^5.10.0
   flutter_svg: ^2.1.0
   get: ^4.7.2
+  icons_launcher: ^3.0.1
   shared_preferences: ^2.5.3
 
 dev_dependencies:
@@ -90,3 +91,11 @@ flutter_gen:
   integrations:
     image: true
     flutter_svg: true
+
+icons_launcher:
+  image_path: "assets/images/logo.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
