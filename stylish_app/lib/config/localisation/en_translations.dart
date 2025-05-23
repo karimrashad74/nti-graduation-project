@@ -31,6 +31,7 @@ final Map<String, String> enTranslations = {
   TranslationsKeys.onboardingPrev: 'Prev',
   TranslationsKeys.onboardingNext: 'Next',
   TranslationsKeys.onboardingGetStarted: 'Get Started',
+  TranslationsKeys.onboardingSkip: 'Skip',
 
   TranslationsKeys.startScreenTitle: 'You want Authentic, here you go!',
   TranslationsKeys.startScreenSubTitle: 'Find it here, buy it now!',

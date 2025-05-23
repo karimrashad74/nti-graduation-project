@@ -29,6 +29,7 @@ final Map<String, String> arTranslations = {
   TranslationsKeys.onboardingPrev: 'السابق',
   TranslationsKeys.onboardingNext: 'التالي',
   TranslationsKeys.onboardingGetStarted: 'ابدأ الآن',
+  TranslationsKeys.onboardingSkip: 'تخطي',
 
   TranslationsKeys.startScreenTitle: 'عايز الأصيل؟ هو هنا!',
   TranslationsKeys.startScreenSubTitle: 'دور هنا، واشتري حالًا!',

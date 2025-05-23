@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../core/utils/ui_helpers.dart';
+import '../../../../core/helper/ui_helpers.dart';
 
 class LanguageToggleItem extends StatelessWidget {
   final String langKey;

@@ -31,6 +31,7 @@ abstract class TranslationsKeys {
   static const String onboardingPrev = 'onboardingPrev';
   static const String onboardingNext = 'onboardingNext';
   static const String onboardingGetStarted = 'onboardingGetStarted';
+  static const String onboardingSkip = 'onboardingSkip';
 
   // Start Screen
   static const String startScreenTitle = 'startScreenTitle';
