@@ -16,11 +16,14 @@ abstract class ColorsApp {
   static Color backgroundOnboarding = Color.fromRGBO(255, 255, 255, 1);
 
   static Color buttonPrimaryColor = Color.fromRGBO(248, 55, 88, 1);
-  static Color buttonSsecondaryColor = Color.fromRGBO(255, 255, 255, 1);
+  static Color buttonSecondaryColor = Color.fromRGBO(255, 255, 255, 1);
 
   static Color formField = Color.fromRGBO(243, 243, 243, 1);
   static Color borderFormField = Color.fromRGBO(168, 168, 169, 1);
   static Color iconsFormField = Color.fromRGBO(98, 98, 98, 1);
+
+  static Color switchButtonPrimary = primaryColor;
+  static Color switchButtonSecondary = Color.fromRGBO(255, 204, 213, 1);
 
   static Color error = Color.fromARGB(255, 255, 0, 0);
 }
