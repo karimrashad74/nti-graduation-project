@@ -6,7 +6,7 @@ import 'package:stylish_app/core/constants/colors_app.dart';
 import 'package:stylish_app/core/constants/text_styles_app.dart';
 import 'package:stylish_app/core/helper/navigation_helper.dart';
 import 'package:stylish_app/core/helper/status_bar_helper.dart';
-import 'package:stylish_app/features/language/presentation/view/language_view.dart';
+import 'package:stylish_app/features/get_start/view/get_start_view.dart';
 import 'package:stylish_app/features/onboarding/viewmodel/onboarding_cubit.dart';
 
 import '../../../config/localisation/translations_keys.dart';
@@ -27,7 +27,7 @@ class OnboardingView extends StatelessWidget {
           child: BlocListener<OnboardingCubit, OnboardingState>(
             listener: (context, state) {
               if (state is OnboardingCompleted) {
-                NavigationHelper.pushAndRemoveUntilTo(context, LanguageView());
+                NavigationHelper.pushAndRemoveUntilTo(context, GetStartView());
               }
             },
             child: BlocBuilder<OnboardingCubit, OnboardingState>(
