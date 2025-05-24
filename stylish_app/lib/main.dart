@@ -2,11 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:stylish_app/config/cache/cache_helper.dart';
 import 'package:stylish_app/core/constants/colors_app.dart';
+import 'package:stylish_app/features/auth/view/login_view.dart';
+import 'package:stylish_app/features/auth/view/register_view.dart';
 import 'package:stylish_app/features/onboarding/view/onboarding_view.dart';
 import 'package:stylish_app/features/splash/splash_screen.dart';
 
 import 'config/localisation/translations.dart';
 import 'config/localisation/translations_keys.dart';
+import 'features/get_start/view/get_start_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,6 +39,9 @@ class MainApp extends StatelessWidget {
           name: OnboardingView.routeName,
           page: () => const OnboardingView(),
         ),
+        GetPage(name: GetStartView.routeName, page: () => const GetStartView()),
+        GetPage(name: LoginView.routeName, page: () => const LoginView()),
+        GetPage(name: RegisterView.routeName, page: () => const RegisterView()),
       ],
     );
   }

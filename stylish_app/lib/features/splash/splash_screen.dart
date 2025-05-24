@@ -6,6 +6,7 @@ import 'package:stylish_app/core/constants/colors_app.dart';
 import 'package:stylish_app/core/helper/navigation_helper.dart';
 import 'package:stylish_app/features/onboarding/view/onboarding_view.dart';
 
+import '../get_start/view/get_start_view.dart';
 import '../language/presentation/view/language_view.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -23,8 +24,12 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(const Duration(seconds: 2), () {
       final seen =
           CacheHelper.getData(key: CacheKeys.onboardingCompleted) == true;
-      if (seen) {
+      final getStartSeen =
+          CacheHelper.getData(key: CacheKeys.getStartCompleted) == true;
+      if (seen && getStartSeen) {
         NavigationHelper.pushAndRemoveUntilTo(context, const LanguageView());
+      } else if (seen) {
+        NavigationHelper.pushAndRemoveUntilTo(context, const GetStartView());
       } else {
         NavigationHelper.pushAndRemoveUntilTo(context, const OnboardingView());
       }
