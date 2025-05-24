@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 import '../../../../config/localisation/translations_keys.dart';
+import '../../../../core/constants/colors_app.dart';
 import '../widgets/language_title.dart';
 import '../widgets/language_toggle_buttons.dart';
 
@@ -30,6 +32,13 @@ class _LanguageViewState extends State<LanguageView> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarColor: ColorsApp.primaryColor,
+        statusBarIconBrightness: Brightness.light,
+        statusBarBrightness: Brightness.light,
+      ),
+    );
     return Scaffold(
       appBar: AppBar(title: Text(TranslationsKeys.settings.tr)),
       body: Center(
