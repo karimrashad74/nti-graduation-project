@@ -22,6 +22,4 @@ class ApiClient {
   Future<Response> get(String endpoint, {Map<String, dynamic>? headers}) async {
     return await _dio.get(endpoint, options: Options(headers: headers));
   }
-
-  // يمكنك إضافة put/delete لاحقاً
 }

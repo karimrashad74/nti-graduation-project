@@ -82,6 +82,12 @@ class $AssetsImages {
   /// File path: assets/images/get_start.png
   AssetGenImage get getStart =>
       const AssetGenImage('assets/images/get_start.png');
+  AssetGenImage get beauty => const AssetGenImage('assets/images/beauty.png');
+  AssetGenImage get fashion => const AssetGenImage('assets/images/fashion.png');
+  AssetGenImage get kids => const AssetGenImage('assets/images/kids.png');
+  AssetGenImage get mens => const AssetGenImage('assets/images/mens.png');
+  AssetGenImage get womens => const AssetGenImage('assets/images/womens.png');
+  AssetGenImage get t_shirt => const AssetGenImage('assets/images/t-shirt.png');
 
   /// List of all assets
   List<AssetGenImage> get values => [getStart];
