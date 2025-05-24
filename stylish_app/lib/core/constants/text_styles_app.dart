@@ -24,4 +24,28 @@ class TextStylesApp {
     height: 1.0,
     letterSpacing: 0.0,
   );
+
+  static const TextStyle getStartTitle = TextStyle(
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+    fontSize: 34,
+    height: 1.0,
+    letterSpacing: 0.01,
+  );
+
+  static const TextStyle getStartSubtitle = TextStyle(
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w400,
+    fontSize: 14,
+    height: 1.54,
+    letterSpacing: 0.01,
+  );
+
+  static const TextStyle getStartButton = TextStyle(
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.w600,
+    fontSize: 23,
+    height: 1.0,
+    letterSpacing: 0.0,
+  );
 }
