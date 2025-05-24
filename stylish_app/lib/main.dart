@@ -4,6 +4,7 @@ import 'package:stylish_app/config/cache/cache_helper.dart';
 import 'package:stylish_app/core/constants/colors_app.dart';
 import 'package:stylish_app/features/auth/view/login_view.dart';
 import 'package:stylish_app/features/auth/view/register_view.dart';
+import 'package:stylish_app/features/home/view/home_view.dart';
 import 'package:stylish_app/features/onboarding/view/onboarding_view.dart';
 import 'package:stylish_app/features/splash/splash_screen.dart';
 
@@ -42,6 +43,7 @@ class MainApp extends StatelessWidget {
         GetPage(name: GetStartView.routeName, page: () => const GetStartView()),
         GetPage(name: LoginView.routeName, page: () => const LoginView()),
         GetPage(name: RegisterView.routeName, page: () => const RegisterView()),
+        GetPage(name: HomeView.routeName, page: () => const HomeView()),
       ],
     );
   }

@@ -10,10 +10,10 @@ class GetStartActions extends StatelessWidget {
   final VoidCallback onLogin;
   final VoidCallback onRegister;
   const GetStartActions({
-    Key? key,
+    super.key,
     required this.onLogin,
     required this.onRegister,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

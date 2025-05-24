@@ -10,7 +10,7 @@ import '../widgets/get_start_actions.dart';
 
 class GetStartView extends StatelessWidget {
   static const String routeName = '/getStart';
-  const GetStartView({Key? key}) : super(key: key);
+  const GetStartView({super.key});
 
   @override
   Widget build(BuildContext context) {

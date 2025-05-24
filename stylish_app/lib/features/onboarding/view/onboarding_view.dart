@@ -14,7 +14,7 @@ import '../widgets/onboarding_slide_widget.dart';
 
 class OnboardingView extends StatelessWidget {
   static const String routeName = '/onboarding';
-  const OnboardingView({Key? key}) : super(key: key);
+  const OnboardingView({super.key});
 
   @override
   Widget build(BuildContext context) {

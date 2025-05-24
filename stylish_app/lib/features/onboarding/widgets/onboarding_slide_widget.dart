@@ -9,11 +9,11 @@ class OnboardingSlideWidget extends StatelessWidget {
   final String title;
   final String subtitle;
   const OnboardingSlideWidget({
-    Key? key,
+    super.key,
     required this.imagePath,
     required this.title,
     required this.subtitle,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

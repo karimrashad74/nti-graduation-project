@@ -1,26 +1,26 @@
-import 'package:http/http.dart' as http;
+import 'package:dio/dio.dart';
 
 import 'api_constants.dart';
 
 class ApiClient {
-  final http.Client _client;
-  ApiClient({http.Client? client}) : _client = client ?? http.Client();
+  final Dio _dio;
+  ApiClient({Dio? dio})
+    : _dio = dio ?? Dio(BaseOptions(baseUrl: ApiConstants.baseUrl));
 
-  Future<http.Response> post(
+  Future<Response> post(
     String endpoint, {
-    Map<String, String>? headers,
+    Map<String, dynamic>? headers,
     Object? body,
   }) async {
-    final url = Uri.parse(ApiConstants.baseUrl + endpoint);
-    return await _client.post(url, headers: headers, body: body);
+    return await _dio.post(
+      endpoint,
+      data: body,
+      options: Options(headers: headers),
+    );
   }
 
-  Future<http.Response> get(
-    String endpoint, {
-    Map<String, String>? headers,
-  }) async {
-    final url = Uri.parse(ApiConstants.baseUrl + endpoint);
-    return await _client.get(url, headers: headers);
+  Future<Response> get(String endpoint, {Map<String, dynamic>? headers}) async {
+    return await _dio.get(endpoint, options: Options(headers: headers));
   }
 
   // يمكنك إضافة put/delete لاحقاً
